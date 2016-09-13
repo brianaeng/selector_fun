@@ -90,33 +90,58 @@ article img:first-child {
 
 /* The Top-Most Top Cat Should have a Golden Background */
 
-aside section:nth-of-type(1) {
+#top-cats section:nth-of-type(1) {
   background-color: gold;
 }
 
+/* other solution */
+/*aside section:nth-of-type(1) {
+  background-color: gold;
+}*/
+
 /* The 2nd-Most Top Cat Should have a Silver/gray Background */
 
-aside section:nth-of-type(2) {
+#top-cats section:nth-of-type(2) {
   background-color: silver;
 }
 
+/* other solution */
+/*aside section:nth-of-type(2) {
+  background-color: silver;
+}*/
+
 /* The 3rd-Most Top Cat Should have a Bronze/brown Background */
 
-aside section:nth-of-type(3) {
+#top-cats section:nth-of-type(3) {
   background-color: #CD7F32;
 }
 
+/* other solution */
+/*aside section:nth-of-type(3) {
+  background-color: #CD7F32;
+}*/
+
 /* Every other Article's Post-Content Background Color to a Light Grey */
 
-main article:nth-of-type(even) {
+article:nth-child(odd) .post-content {
   background-color: #cccccc;
 }
 
+/* other solution */
+/*main article:nth-of-type(even) section {
+  background-color: #cccccc;
+}*/
+
 /* All Top Kitten's Profile Photos Rounded */
 
-aside img {
+#top-cats img {
   border-radius: 50px;
 }
+
+/* other solution */
+/*aside img {
+  border-radius: 50px;
+}*/
 
 /*** BONUS ***/
 
@@ -128,9 +153,14 @@ h3 a::before {
 
 /* Top-most Top Cat has a trophy emoji before name */
 
-aside section:nth-of-type(1) h3::before {
+#top-cats section:nth-of-type(1) h3::before {
   content: "🏆";
 }
+
+/* other solution */
+/*aside section:nth-of-type(1) h3::before {
+  content: "🏆";
+}*/
 
 /* Use Google Fonts to Change h1 & h2 fonts to Lobster */
 
